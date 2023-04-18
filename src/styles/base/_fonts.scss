@@ -1,0 +1,296 @@
+@font-face {
+	font-family: 'Intro Black Alt';
+	src: url('../fonts/Intro-Black-Alt.woff2') format('woff2'),
+		url('../fonts/Intro-Black-Alt.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Black-Italic.woff2') format('woff2'),
+		url('../fonts/Intro-Black-Italic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Bold Alt';
+	src: url('../fonts/Intro-Bold-Alt.woff2') format('woff2'),
+		url('../fonts/Intro-Bold-Alt.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Black.woff2') format('woff2'),
+		url('../fonts/Intro-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Bold Caps';
+	src: url('../fonts/Intro-Bold-Caps.woff2') format('woff2'),
+		url('../fonts/Intro-Bold-Caps.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Black Caps';
+	src: url('../fonts/Intro-Black-Caps.woff2') format('woff2'),
+		url('../fonts/Intro-Black-Caps.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Book';
+	src: url('../fonts/Intro-Book-Italic.woff2') format('woff2'),
+		url('../fonts/Intro-Book-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Light.woff2') format('woff2'),
+		url('../fonts/Intro-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Book Alt';
+	src: url('../fonts/Intro-Book-Alt.woff2') format('woff2'),
+		url('../fonts/Intro-Book-Alt.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Regular';
+	src: url('../fonts/Intro-Regular-Italic.woff2') format('woff2'),
+		url('../fonts/Intro-Regular-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Bold.woff2') format('woff2'),
+		url('../fonts/Intro-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Regular Alt';
+	src: url('../fonts/Intro-Regular-Alt.woff2') format('woff2'),
+		url('../fonts/Intro-Regular-Alt.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Light Alt';
+	src: url('../fonts/Intro-Light-Alt.woff2') format('woff2'),
+		url('../fonts/Intro-Light-Alt.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Thin Alt';
+	src: url('../fonts/Intro-Thin-Alt.woff2') format('woff2'),
+		url('../fonts/Intro-Thin-Alt.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Book';
+	src: url('../fonts/Intro-Book.woff2') format('woff2'),
+		url('../fonts/Intro-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Bold-Italic.woff2') format('woff2'),
+		url('../fonts/Intro-Bold-Italic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Thin Caps';
+	src: url('../fonts/Intro-Thin-Caps.woff2') format('woff2'),
+		url('../fonts/Intro-Thin-Caps.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Regular.woff2') format('woff2'),
+		url('../fonts/Intro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Regular Caps';
+	src: url('../fonts/Intro-Regular-Caps.woff2') format('woff2'),
+		url('../fonts/Intro-Regular-Caps.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Thin.woff2') format('woff2'),
+		url('../fonts/Intro-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Light-Italic.woff2') format('woff2'),
+		url('../fonts/Intro-Light-Italic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Light Caps';
+	src: url('../fonts/Intro-Light-Caps.woff2') format('woff2'),
+		url('../fonts/Intro-Light-Caps.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Book Caps';
+	src: url('../fonts/Intro-Book-Caps.woff2') format('woff2'),
+		url('../fonts/Intro-Book-Caps.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Thin-Italic.woff2') format('woff2'),
+		url('../fonts/Intro-Thin-Italic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+		url('../fonts/Inter-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Black.woff2') format('woff2'),
+		url('../fonts/Inter-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Thin.woff2') format('woff2'),
+		url('../fonts/Inter-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+		url('../fonts/Inter-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-ExtraLight.woff2') format('woff2'),
+		url('../fonts/Inter-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+		url('../fonts/Inter-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+		url('../fonts/Inter-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Light.woff2') format('woff2'),
+		url('../fonts/Inter-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
+		url('../fonts/Inter-ExtraBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

@@ -1,0 +1,285 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Cormorant', serif;
+	font-size: clamp(1rem, 2.7vw - 0.2rem, 1.5rem);
+	line-height: 27px;
+	font-weight: 300;
+	letter-spacing: 0.07em;
+	color: $base-color;
+	background-color: #fff;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+
+::selection {
+	background: rgba(189, 189, 189, 0.54);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-block: 30px;
+	letter-spacing: normal;
+	line-height: normal;
+	font-family: 'Intro Bold Caps';
+	font-size: clamp(1.25rem, 7.3vw - 2rem, 2.625rem);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+p {
+	margin-block: 30px;
+}
+
+ul {
+	margin-block: $indmin;
+	padding-inline-start: $ind;
+}
+
+li {
+	list-style: none;
+
+	&:before {
+		display: inline-block;
+		content: '';
+		position: relative;
+		left: -10px;
+		top: -3px;
+		height: 3px;
+		width: 3px;
+		background-color: $base-color;
+		border-radius: 100%;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: $border;
+	transition: color $transition;
+
+	:visited {
+		color: rgba(51, 51, 51, 0.66);
+	}
+
+	&:hover {
+		color: $accent-color;
+	}
+}
+
+blockquote {
+	margin-block: 100px;
+	letter-spacing: normal;
+	line-height: normal;
+	font-family: 'Intro Bold Caps';
+	font-size: clamp(1.25rem, 7.3vw - 2rem, 2.625rem);
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $white;
+}
+
+section,
+aside {
+	display: block;
+}
+
+.container,
+.layout {
+	margin: 0 auto;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: auto minmax(75vh, 1fr) auto;
+	grid-template-columns: minmax(250px, $container);
+	justify-content: center;
+	gap: 100px;
+}
+
+.layout {
+	position: relative;
+	display: grid;
+	grid-template-rows: auto minmax(75vh, 1fr) auto;
+	gap: $gap;
+	margin-inline: $layout-margin;
+	padding-block-start: 30px;
+	padding-block-end: 60px;
+
+	&-none {
+		margin-inline: -$layout-margin;
+		padding-inline: $layout-margin;
+		&__slider {
+			margin-inline: -5vw;
+			padding-inline: 0;
+		}
+	}
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: $gap;
+
+	&__content {
+		display: flex;
+		gap: $ind;
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
+
+.content {
+	display: grid;
+	grid-template-columns: minmax(200px, 1fr);
+	gap: 100px;
+}
+
+.content-sidebar {
+	display: grid;
+	grid-template-columns: minmax(350px, auto) 1fr;
+	gap: 0 $gap;
+	height: 100%;
+}
+
+// layout-none и сайдбар layout-none
+
+.layout-none {
+	// Сайдбар в layout-none
+	.content-sidebar {
+		.content {
+			margin-inline-end: $ind;
+		}
+	}
+}
+
+.subtitle {
+	font-family: 'Inter';
+	font-size: clamp(1.2rem, 5.6vw - 1.3rem, 2.25rem);
+	font-weight: 100;
+	letter-spacing: normal;
+}
+
+.dark-block {
+	padding-block: $ind;
+	background-color: #6f6c6e;
+	color: $white;
+}
+
+// Цветовые схемы
+
+@media screen and (max-width: 1300px) {
+	.container {
+		padding: 0 $ind;
+		padding-block-start: 30px;
+	}
+
+	.layout {
+		margin-inline: $layout-margin-mob;
+
+		&-none {
+			margin-inline: -$layout-margin-mob;
+			padding-inline: $layout-margin-mob;
+
+			&__slider {
+				margin-inline: -18vw;
+				padding-inline: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	ul {
+		margin-block-start: 10px;
+		padding-inline-start: $indmin;
+	}
+
+	.container,
+	.content {
+		gap: 50px;
+	}
+
+	.layout {
+		&-none {
+			.content-sidebar {
+				.content {
+					margin-inline: $ind;
+				}
+			}
+			&__slider {
+				margin-inline: 0;
+				padding-inline: 0;
+			}
+		}
+	}
+	.row {
+		gap: $gapmin;
+		&__content {
+			flex-wrap: wrap;
+		}
+	}
+	.content-sidebar {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* @media screen and (max-width: 23px) {
+	.layout {
+		&-none {
+			&__slider {
+				margin-inline: -5vw;
+				padding-inline: 0;
+			}
+		}
+	}
+} */
+
+@media screen and (max-width: 375px) {
+	.layout,
+	.row {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+}
+
+// Класс выключено
+
+.disabled {
+	pointer-events: none;
+	color: $disabled;
+}
+
+// Класс вступительного текста
+
+.introductory {
+	font-family: serif;
+	line-height: normal;
+	padding-block-end: $ind;
+	border-bottom: $border;
+}
+
+// Стиль страницы 404
+
+.not-available {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	h1,
+	h2 {
+		text-align: center;
+		font-weight: 100;
+	}
+}

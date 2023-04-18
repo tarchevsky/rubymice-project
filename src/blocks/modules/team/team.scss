@@ -1,0 +1,25 @@
+.team {
+	&__row {
+		gap: 100px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: $indmin;
+		&--avatar {
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+		&--text {
+			padding-inline-start: $indmin;
+		}
+		&--who {
+			font-family: 'Intro Bold Caps', sans-serif;
+		}
+		&--descr {
+			font-family: 'Inter';
+		}
+	}
+}

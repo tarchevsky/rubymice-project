@@ -1,0 +1,23 @@
+.companies {
+	.slider {
+		margin-top: 100px;
+		&-slide {
+			align-self: center;
+			justify-self: center;
+			img {
+				height: auto;
+				width: auto;
+				margin: 0 auto;
+			}
+			.rusal {
+				height: 80px;
+			}
+			.aijk {
+				height: 100px;
+			}
+			.fond {
+				height: 100px;
+			}
+		}
+	}
+}

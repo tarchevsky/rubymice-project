@@ -1,0 +1,36 @@
+.service-procedure {
+	background: url(../img/audience-blurred.png) center center/cover no-repeat;
+	filter: blur(0);
+	&__row {
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	}
+
+	&__item {
+		position: relative;
+		&:not(:last-child)::after {
+			position: absolute;
+			inset-block-start: 50%;
+			inset-inline-end: 0;
+			transform: translateY(-50%);
+			display: block;
+			content: '';
+			height: 5px;
+			width: 5px;
+			background: $white;
+			border-radius: 100%;
+		}
+		&--number {
+			font-size: 52px;
+		}
+	}
+}
+
+@media screen and (max-width: 1396px) {
+	.service-procedure {
+		&__item {
+			&:not(:last-child)::after {
+				display: none;
+			}
+		}
+	}
+}

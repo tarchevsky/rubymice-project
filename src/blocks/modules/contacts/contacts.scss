@@ -1,0 +1,40 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	gap: $indmin;
+
+	&__icons {
+		display: flex;
+		gap: $indmin;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		border: none;
+		.phone {
+			align-self: center;
+			height: 25px;
+			width: 25px;
+		}
+		.envelope {
+			height: 40px;
+			width: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contacts {
+		a {
+			.phone {
+				height: 20px;
+				width: 20px;
+			}
+			.envelope {
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+}

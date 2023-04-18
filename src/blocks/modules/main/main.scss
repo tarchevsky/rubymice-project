@@ -1,0 +1,47 @@
+.main {
+	&__row {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto;
+	}
+	&-text {
+		grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+		&__title {
+			margin-block: 0;
+			padding-top: 20px;
+			background-image: url('../img/audience.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			font-family: 'Intro Black Caps', sans-serif;
+			font-size: clamp(2.5rem, 20vw - 6.2rem, 6.25rem);
+			letter-spacing: 0.07em;
+
+			span {
+				letter-spacing: 0.3em;
+			}
+		}
+		&__subtitle {
+			align-self: end;
+			font-family: 'Inter';
+			font-size: clamp(1.125rem, 3.3vw - 0.3rem, 1.75rem);
+			font-weight: 200;
+			line-height: 28px;
+			letter-spacing: 0.15em;
+		}
+	}
+	&-subtext {
+		margin: 10px 0 0 0;
+		font-family: 'Inter';
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+		&-text {
+			grid-template-columns: 1fr;
+			gap: 0;
+		}
+	}
+}
